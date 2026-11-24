@@ -1,0 +1,18 @@
+# Configuração local e credenciais
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.credentials
+# Dependências, compilações e ficheiros locais
+node_modules/
+dist/
+build/
+coverage/
+*.log
+*.test
+*.out
+.DS_Store
+.idea/
+.vscode/

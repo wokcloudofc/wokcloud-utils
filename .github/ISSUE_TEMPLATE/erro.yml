@@ -1,0 +1,26 @@
+name: Comunicar um erro
+description: Registar um problema na documentação ou numa versão publicada.
+title: '[Erro] '
+body:
+  - type: markdown
+    attributes:
+      value: 'Para vulnerabilidades, consulta SECURITY.md e usa o contacto privado. Não publiques tokens, palavras-passe ou dados de clientes.'
+  - type: textarea
+    id: problem
+    attributes:
+      label: O que aconteceu?
+      description: Indica o ficheiro, exemplo ou versão afetada e o comportamento esperado.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Como reproduzir
+      description: Passos e mensagem de erro, com os dados privados ocultados.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Versão e ambiente
+      placeholder: 'Commit ou versão, sistema operativo e runtime, quando aplicável'
